@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio | Luciano</title>
+  <meta name="description" content="Portfolio personal - Desarrollador/a Web">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'brand-cyan': '#00E5FF',
+          'bg-dark': '#0f1724',
+          'muted-gray': '#cbd5e1'
+        },
+        boxShadow: {
+          'glow-cyan': '0 10px 30px rgba(0,229,255,0.16), 0 6px 12px rgba(2,6,23,0.6)'
+        }
+      }
+    }
+  }
+</script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root { font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    /* Hexagon-ish image mask using clip-path for hero image */
+    .hex-mask { clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%); }
+  </style>
+</head>
+
+ <!-- <body class="bg-bg-dark text-gray-100 antialiased leading-relaxed" esto no>-->
+<body class="bg-gray-800 text-gray-100">
+
+
+  <!-- Header-->
+  <header class="sticky top-0 z-40 bg-bg-dark/70 backdrop-blur-sm border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-white font-bold text-lg">Luciano</a>
+      <nav>
+        <ul class="flex gap-6 items-center text-sm">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li><a href="#experience" class="nav-link">Experiencia</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+          <li><a href="/cv.pdf" download class="ml-3 inline-block px-4 py-2 rounded-full text-sm font-semibold border border-cyan-400 hover:bg-cyan-500/10">Descargar CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="max-w-6xl mx-auto px-6 pt-12">
+
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div class="space-y-6">
+        <p class="uppercase text-cyan-300 text-sm font-semibold">Hola, soy</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Luciano Gomez
+        </h1>
+        <h2 class="text-xl text-cyan-300 font-semibold">Desarrollador/a Web Junior</h2>
+        <p class="text-gray-300 max-w-xl">Me especializo en construir interfaces accesibles y modernas usando HTML, CSS (Tailwind) y JavaScript. Me apasiona transformar ideas en experiencias digitales limpias y rápidas.</p>
+
+        <div class="flex gap-4 items-center">
+          <a href="#projects" class="inline-block px-6 py-3 rounded-full bg-brand-cyan text-bg-dark font-semibold shadow-glow-cyan hover:opacity-95">Ver proyectos</a>
+          <a href="#contact" class="inline-block px-6 py-3 rounded-full border border-gray-700 text-gray-200 hover:bg-gray-800">Contactame</a>
+        </div>
+
+        <div class="flex items-center gap-4 text-sm text-gray-400 mt-6">
+          <a href="https://github.com/Lucianogmz" target="_blank" aria-label="GitHub" class="hover:text-white">GitHub</a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <div class="w-64 h-64 hex-mask overflow-hidden rounded-2xl shadow-glow-cyan p-1" style="background:linear-gradient(120deg,#06212a,rgba(0,229,255,0.02))">
+
+          <img src="img/pepe.png" alt="Avatar" class="w-full h-full object-cover block transform transition-transform duration-300 hover:scale-105">
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="py-12">
+      <h3 class="text-center text-2xl font-bold mb-6">Proyectos</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+
+       
+        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
+          <img src="/img/p1.png" alt="Proyecto 1" class="w-full h-44 object-cover brightness-75 hover:brightness-100 transition duration-300">
+          <div class="p-4">
+            <h4 class="font-semibold">Tarjera de Presentación</h4>
+            <p class="text-sm text-gray-300 mt-2">Tarjeta de Presentacion con HTML Y CSS.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <a href="https://lucianogmz.github.io/Trabajo-Practico-1/" class="text-sm font-medium text-brand-cyan hover:underline">Ver Tarjeta</a>
+              <span class="text-xs text-gray-400">HTML · CSS</span>
+            </div>
+          </div>
+        </article>
+
+      
+        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
+          <img src="img/pizza.png" alt="Proyecto 2" class="w-full h-44 object-cover brightness-75 hover:brightness-100 transition duration-300">
+          <div class="p-4">
+            <h4 class="font-semibold">Pizzería Web</h4>
+            <p class="text-sm text-gray-300 mt-2">Este proyecto es una página web simple para una pizzería. Está desarrollado con HTML y CSS puro, simulando un menú online con diseño visual atractivo y adaptable.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <a href="#" class="text-sm font-medium text-brand-cyan hover:underline">Ver menu</a>
+              <span class="text-xs text-gray-400">HTML · CSS </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
+          <img src="/img/oca.jpg" alt="Proyecto 3" class="w-full h-44 object-cover brightness-75 hover:brightness-100 transition duration-300">
+          <div class="p-4">
+            <h4 class="font-semibold">OCA</h4>
+            <p class="text-sm text-gray-300 mt-2 ">Juego de la Oca, inspirado en CS2, desarrollado en C++ como parte de un trabajo práctico.</p>
+            <div class="mt-4 flex items-center justify-between">
+              <a href="#" class="text-sm font-medium text-brand-cyan hover:underline">Ver proyecto</a>
+              <span class="text-xs text-gray-400">C++ · QT</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience" class="py-12">
+      <h3 class=" text-center text-2xl font-bold mb-6">Experiencia</h3>
+      <div class="space-y-4">
+        <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
+          <h4 class="font-semibold">Estudiante de Desarrollo Web Full Stack</h4>
+          <p class="text-sm text-gray-300">Desarrollador Full Stack · 2025 - Presente</p>
+          <ul class="mt-2 text-gray-400 list-disc ml-5 text-sm">
+            <li>Creación de interfaces responsivas utilizando frameworks modernos.</li>
+            <li>Integración de APIs para renderizado dinámico de datos.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
+          <h4 class="font-semibold">Estudiante de Licenciatura en Sistemas</h4>
+          <p class="text-sm text-gray-300">2023 - Presente</p>
+          <ul class="mt-2 text-gray-400 list-disc ml-5 text-sm">
+            <li>Manejo de estructuras de datos y algoritmos para optimización de procesos.</li>
+            <li>Desarrollo de aplicaciones con enfoque orientado a objetos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="py-12">
+      <h3 class="text-center text-2xl font-bold mb-6">Habilidades</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <h5 class="font-semibold">Frontend</h5>
+          <p class="text-sm text-gray-300 mt-2">HTML · CSS · JavaScript · Tailwind</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <h5 class="font-semibold">Backend</h5>
+          <p class="text-sm text-gray-300 mt-2">C++ · Python</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <h5 class="font-semibold">Herramientas</h5>
+          <p class="text-sm text-gray-300 mt-2">VSCode · QTcreator</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <h5 class="font-semibold">Control de versiones</h5>
+          <p class="text-sm text-gray-300 mt-2">Git · GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-12">
+      <h3 class="text-2xl font-bold mb-6">Contacto</h3>
+      <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 max-w-2xl">
+        <form id="contactForm" novalidate>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm text-gray-300 mb-1">Nombre</label>
+              <input id="name" name="name" type="text" class="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-cyan" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm text-gray-300 mb-1">Correo</label>
+              <input id="email" name="email" type="email" class="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-cyan" required>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label for="message" class="block text-sm text-gray-300 mb-1">Mensaje</label>
+            <textarea id="message" name="message" rows="5" class="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-cyan" required></textarea>
+          </div>
+
+          <div class="mt-4 flex items-center gap-4">
+            <button type="submit" class="px-5 py-2 rounded-full bg-brand-cyan text-bg-dark font-semibold shadow-glow-cyan">Enviar mensaje</button>
+            <p id="formMsg" class="text-sm text-gray-400"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-gray-800 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-400">© 2025 Lucho • Todos los derechos reservados</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript-->
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('formMsg');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!name || !email || !message) {
+        msg.textContent = 'Por favor completa todos los campos.';
+        msg.classList.add('text-red-400');
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        msg.textContent = 'Ingresa un correo válido.';
+        msg.classList.add('text-red-400');
+        return;
+      }
+
+      msg.textContent = 'Mensaje enviado. ¡Gracias!';
+      msg.classList.remove('text-red-400');
+      msg.classList.add('text-green-400');
+
+      form.reset();
+      setTimeout(() => { msg.textContent = ''; msg.classList.remove('text-green-400'); }, 4000);
+    });
+  </script>
+
+</body>
+</html>
