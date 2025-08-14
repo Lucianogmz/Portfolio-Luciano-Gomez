@@ -31,12 +31,11 @@
 
   <style>
     :root { font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-    /* Hexagon-ish image mask using clip-path for hero image */
+    
     .hex-mask { clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%); }
   </style>
 </head>
 
- <!-- <body class="bg-bg-dark text-gray-100 antialiased leading-relaxed" esto no>-->
 <body class="bg-gray-800 text-gray-100">
 
 
@@ -211,10 +210,14 @@ shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] trans
             <textarea id="message" name="message" rows="5" class="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-cyan" required></textarea>
           </div>
 
-          <div class="mt-4 flex items-center gap-4">
-            <button type="submit" class="px-5 py-2 rounded-full bg-brand-cyan text-bg-dark font-semibold shadow-glow-cyan">Enviar mensaje</button>
-            <p id="formMsg" class="text-sm text-gray-400"></p>
-          </div>
+      <div class="mt-6 flex items-center justify-center sm:justify-start">
+    <button type="submit" class="px-8 py-3 rounded-full bg-brand-cyan text-bg-dark text-lg font-bold
+    transform transition-all duration-300 border border-cyan-400
+    hover:scale-105 hover:bg-cyan-300 hover:text-gray-900 hover:shadow-lg hover:shadow-cyan-500/50
+    focus:outline-none focus:ring-4 focus:ring-brand-cyan focus:ring-opacity-50">
+        Enviar mensaje
+    </button>
+</div>
         </form>
       </div>
     </section>
@@ -234,7 +237,6 @@ shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] trans
 
   <!-- JavaScript-->
   <script>
-  // --- Scroll suave en la navegación ---
   document.querySelectorAll('a.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -287,7 +289,6 @@ shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] trans
 
   const ctx = canvas.getContext('2d');
 
-  // Ajustar tamaño dinámico
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
