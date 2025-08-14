@@ -18,7 +18,7 @@ El proyecto fue construido utilizando un stack moderno y eficiente:
 
 Puedes visitar el sitio web y ver el portfolio en vivo a través de GitHub Pages en el siguiente enlace:
 
-**[https://lucianogmz.github.io/portfolio-luciano-gomez/](https://lucianogmz.github.io/portfolio-luciano-gomez/)**
+**[https://lucianogmz.github.io/portfolio-luciano-gomez/](https://lucianogmz.github.io/Portfolio-Luciano-Gomez/)**
 
 ### Créditos y Agradecimientos
 
