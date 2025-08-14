@@ -59,41 +59,43 @@
 
   <main id="home" class="max-w-6xl mx-auto px-6 pt-12">
 
-    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
-      <div class="space-y-6">
-        <p class="uppercase text-cyan-300 text-sm font-semibold">Hola, soy</p>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-          Luciano Gomez
-        </h1>
-        <h2 class="text-xl text-cyan-300 font-semibold">Desarrollador/a Web Junior</h2>
-        <p class="text-gray-300 max-w-xl">Me especializo en construir interfaces accesibles y modernas usando HTML, CSS (Tailwind) y JavaScript. Me apasiona transformar ideas en experiencias digitales limpias y rápidas.</p>
+    <section class="relative grid md:grid-cols-2 gap-8 items-center py-12 px-6 rounded-2xl rounded-lg 
+shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] transition duration-300" style="background: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.6) 100%);">
+  <div class="space-y-6 relative z-10">
+    <p class="uppercase text-cyan-300 text-sm font-semibold">Hola, soy</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+      Luciano Gomez
+    </h1>
+    <h2 class="text-xl text-cyan-300 font-semibold">Desarrollador/a Web Junior</h2>
+    <p class="text-gray-300 max-w-xl">Me especializo en construir interfaces accesibles y modernas usando HTML, CSS (Tailwind) y JavaScript. Me apasiona transformar ideas en experiencias digitales limpias y rápidas.</p>
 
-        <div class="flex gap-4 items-center">
-          <a href="#projects" class="inline-block px-6 py-3 rounded-full bg-brand-cyan text-bg-dark font-semibold shadow-glow-cyan hover:opacity-95">Ver proyectos</a>
-          <a href="#contact" class="inline-block px-6 py-3 rounded-full border border-gray-700 text-gray-200 hover:bg-gray-800">Contactame</a>
-        </div>
+    <div class="flex gap-4 items-center">
+      <a href="#projects" class="inline-block px-6 py-3 rounded-full bg-brand-cyan text-bg-dark font-semibold shadow-glow-cyan hover:opacity-95">Ver proyectos</a>
+      <a href="#contact" class="inline-block px-6 py-3 rounded-full border border-gray-700 text-gray-200 hover:bg-gray-800">Contactame</a>
+    </div>
 
-        <div class="flex items-center gap-4 text-sm text-gray-400 mt-6">
-          <a href="https://github.com/Lucianogmz" target="_blank" aria-label="GitHub" class="hover:text-white">GitHub</a>
-          <a href="#" aria-label="LinkedIn" class="hover:text-white">LinkedIn</a>
-        </div>
-      </div>
+    <div class="flex items-center gap-4 text-sm text-gray-400 mt-6">
+      <a href="https://github.com/Lucianogmz" target="_blank" aria-label="GitHub" class="hover:text-white">GitHub</a>
+      <a href="#" aria-label="LinkedIn" class="hover:text-white">LinkedIn</a>
+    </div>
+  </div>
 
-      <div class="flex justify-center md:justify-end">
-        <div class="w-64 h-64 hex-mask overflow-hidden rounded-2xl shadow-glow-cyan p-1" style="background:linear-gradient(120deg,#06212a,rgba(0,229,255,0.02))">
+  <div class="flex justify-center md:justify-end relative z-10">
+    <div class="w-64 h-64 hex-mask overflow-hidden rounded-2xl shadow-glow-cyan p-1" style="background:linear-gradient(120deg,#06212a,rgba(0,229,255,0.02))">
+      <img src="img/pepe.png" alt="Avatar" class="w-full h-full object-cover block transform transition-transform duration-300 hover:scale-105">
+    </div>
+  </div>
+</section>
 
-          <img src="img/pepe.png" alt="Avatar" class="w-full h-full object-cover block transform transition-transform duration-300 hover:scale-105">
-        </div>
-      </div>
-    </section>
 
     <!-- Proyectos -->
     <section id="projects" class="py-12">
-      <h3 class="text-center text-2xl font-bold mb-6">Proyectos</h3>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h3 class="text-center text-2xl font-bold mb-6 ">Proyectos</h3>
+      <div class="grid md:grid-cols-3 gap-6 ">
 
        
-        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
+        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 duration-300 rounded-lg 
+shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] transition duration-300">
           <img src="img/p1.png" alt="Proyecto 1" class="w-full h-44 object-cover brightness-75 hover:brightness-100 transition duration-300">
           <div class="p-4">
             <h4 class="font-semibold">Tarjera de Presentación</h4>
@@ -106,7 +108,8 @@
         </article>
 
       
-        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
+        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 duration-300 rounded-lg 
+shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] transition duration-300">
           <img src="img/pizza.png" alt="Proyecto 2" class="w-full h-44 object-cover brightness-75 hover:brightness-100 transition duration-300">
           <div class="p-4">
             <h4 class="font-semibold">Pizzería Web</h4>
@@ -119,7 +122,8 @@
         </article>
 
         <!-- Proyecto 3 -->
-        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700">
+        <article class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:scale-105 duration-300 rounded-lg 
+shadow-[0_0_10px_#06b6d4] hover:shadow-[0_0_20px_#06b6d4,0_0_30px_#06b6d4] transition duration-300">
           <img src="img/oca.jpg" alt="Proyecto 3" class="w-full h-44 object-cover brightness-75 hover:brightness-100 transition duration-300">
           <div class="p-4">
             <h4 class="font-semibold">OCA</h4>
@@ -135,51 +139,57 @@
     </section>
 
     <!-- Experiencia -->
-    <section id="experience" class="py-12">
-      <h3 class=" text-center text-2xl font-bold mb-6">Experiencia</h3>
-      <div class="space-y-4">
-        <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
-          <h4 class="font-semibold">Estudiante de Desarrollo Web Full Stack</h4>
-          <p class="text-sm text-gray-300">Desarrollador Full Stack · 2025 - Presente</p>
-          <ul class="mt-2 text-gray-400 list-disc ml-5 text-sm">
-            <li>Creación de interfaces responsivas utilizando frameworks modernos.</li>
-            <li>Integración de APIs para renderizado dinámico de datos.</li>
-          </ul>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
-          <h4 class="font-semibold">Estudiante de Licenciatura en Sistemas</h4>
-          <p class="text-sm text-gray-300">2023 - Presente</p>
-          <ul class="mt-2 text-gray-400 list-disc ml-5 text-sm">
-            <li>Manejo de estructuras de datos y algoritmos para optimización de procesos.</li>
-            <li>Desarrollo de aplicaciones con enfoque orientado a objetos.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <section id="skills" class="py-20">
+    <h3 class="text-center text-2xl font-bold mb-8">Habilidades</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
 
-    <!-- Habilidades -->
-    <section id="skills" class="py-12">
-      <h3 class="text-center text-2xl font-bold mb-6">Habilidades</h3>
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-          <h5 class="font-semibold">Frontend</h5>
-          <p class="text-sm text-gray-300 mt-2">HTML · CSS · JavaScript · Tailwind</p>
+        <div class="relative bg-gray-800 p-8 rounded-lg border border-gray-700 overflow-hidden transition-all duration-300 group">
+            <h5 class="text-center font-semibold relative z-10 text-lg">Frontend</h5>
+            <div class="relative h-10 mt-2 overflow-hidden">
+                <p class="text-base text-gray-300 absolute top-0 transition-all duration-300 group-hover:-translate-y-full">HTML · CSS · JavaScript</p>
+                <div class="absolute bottom-0 left-0 w-full flex items-center justify-center space-x-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                    <img src="img/html-logo.svg" alt="HTML" class="h-10 w-10 object-contain">
+                    <img src="img/css-logo.svg" alt="CSS" class="h-10 w-10 object-contain">
+                    <img src="img/js-logo.svg" alt="JavaScript" class="h-10 w-10 object-contain">
+                </div>
+            </div>
         </div>
-        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-          <h5 class="font-semibold">Backend</h5>
-          <p class="text-sm text-gray-300 mt-2">C++ · Python</p>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-          <h5 class="font-semibold">Herramientas</h5>
-          <p class="text-sm text-gray-300 mt-2">VSCode · QTcreator</p>
-        </div>
-        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
-          <h5 class="font-semibold">Control de versiones</h5>
-          <p class="text-sm text-gray-300 mt-2">Git · GitHub</p>
-        </div>
-      </div>
-    </section>
 
+        <div class="relative bg-gray-800 p-8 rounded-lg border border-gray-700 overflow-hidden transition-all duration-300 group">
+            <h5 class="text-center font-semibold relative z-10 text-lg">Backend</h5>
+            <div class="relative h-10 mt-2 overflow-hidden">
+                <p class="text-base text-gray-300 absolute top-0 transition-all duration-300 group-hover:-translate-y-full">C++ · Python</p>
+                <div class="absolute bottom-0 left-0 w-full flex items-center justify-center space-x-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                    <img src="img/c++-logo.svg" alt="C++" class="h-10 w-10 object-contain">
+                    <img src="img/python-logo.svg" alt="Python" class="h-10 w-10 object-contain">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative bg-gray-800 p-8 rounded-lg border border-gray-700 overflow-hidden transition-all duration-300 group">
+            <h5 class="text-center font-semibold relative z-10 text-lg">Herramientas</h5>
+            <div class="relative h-10 mt-2 overflow-hidden">
+                <p class="text-base text-gray-300 absolute top-0 transition-all duration-300 group-hover:-translate-y-full">VSCode · QTcreator</p>
+                <div class="absolute bottom-0 left-0 w-full flex items-center justify-center space-x-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                    <img src="img/vscode-logo.svg" alt="VSCode" class="h-10 w-10 object-contain">
+                    <img src="img/qt-logo.svg" alt="QTcreator" class="h-10 w-10 object-contain">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative bg-gray-800 p-8 rounded-lg border border-gray-700 overflow-hidden transition-all duration-300 group">
+            <h5 class="font-semibold relative z-10 text-lg">Control de versiones</h5>
+            <div class="relative h-10 mt-2 overflow-hidden">
+                <p class="text-base text-gray-300 absolute top-0 transition-all duration-300 group-hover:-translate-y-full">Git · GitHub</p>
+                <div class="absolute bottom-0 left-0 w-full flex items-center justify-center space-x-4 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                    <img src="img/git-logo.svg" alt="Git" class="h-10 w-10 object-contain">
+                    <img src="img/github-logo.svg" alt="GitHub" class="h-10 w-10 object-contain">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
     <!-- Contacto -->
     <section id="contact" class="py-12">
       <h3 class="text-2xl font-bold mb-6">Contacto</h3>
@@ -224,45 +234,102 @@
 
   <!-- JavaScript-->
   <script>
-    document.querySelectorAll('a.nav-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const href = link.getAttribute('href');
-        const target = document.querySelector(href);
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-
-    const form = document.getElementById('contactForm');
-    const msg = document.getElementById('formMsg');
-
-    form.addEventListener('submit', (e) => {
+  // --- Scroll suave en la navegación ---
+  document.querySelectorAll('a.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
       e.preventDefault();
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
-
-      
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!name || !email || !message) {
-        msg.textContent = 'Por favor completa todos los campos.';
-        msg.classList.add('text-red-400');
-        return;
-      }
-      if (!emailRegex.test(email)) {
-        msg.textContent = 'Ingresa un correo válido.';
-        msg.classList.add('text-red-400');
-        return;
-      }
-
-      msg.textContent = 'Mensaje enviado. ¡Gracias!';
-      msg.classList.remove('text-red-400');
-      msg.classList.add('text-green-400');
-
-      form.reset();
-      setTimeout(() => { msg.textContent = ''; msg.classList.remove('text-green-400'); }, 4000);
+      const href = link.getAttribute('href');
+      const target = document.querySelector(href);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-  </script>
+  });
+
+  // --- Validación del formulario ---
+  const form = document.getElementById('contactForm');
+  const msg = document.getElementById('formMsg');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!name || !email || !message) {
+      msg.textContent = 'Por favor completa todos los campos.';
+      msg.classList.add('text-red-400');
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      msg.textContent = 'Ingresa un correo válido.';
+      msg.classList.add('text-red-400');
+      return;
+    }
+
+    msg.textContent = 'Mensaje enviado. ¡Gracias!';
+    msg.classList.remove('text-red-400');
+    msg.classList.add('text-green-400');
+
+    form.reset();
+    setTimeout(() => { msg.textContent = ''; msg.classList.remove('text-green-400'); }, 4000);
+  });
+
+  // --- Fondo Animado con Particulas ---
+  const canvas = document.createElement('canvas');
+  document.body.appendChild(canvas);
+  canvas.style.position = 'fixed';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
+  canvas.style.width = '100%';
+  canvas.style.height = '100%';
+  canvas.style.zIndex = '-1'; 
+  canvas.style.background = '#0d0d0d';
+
+  const ctx = canvas.getContext('2d');
+
+  // Ajustar tamaño dinámico
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  const particles = [];
+  const numParticles = 80;
+
+  for (let i = 0; i < numParticles; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 4 + 1,
+      speedX: (Math.random() - 0.5) * 2,
+      speedY: (Math.random() - 0.5) * 2
+    });
+  }
+
+  function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'white';
+
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+      p.x += p.speedX;
+      p.y += p.speedY;
+
+      // Rebote en los bordes
+      if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+    });
+
+    requestAnimationFrame(animateParticles);
+  }
+
+  animateParticles();
+</script>
+
 
 </body>
 </html>
